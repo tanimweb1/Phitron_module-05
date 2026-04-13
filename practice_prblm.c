@@ -67,4 +67,24 @@ return 0;
 
 
 
+#include<stdio.h>
+int main(){
+
+//N. Char
+
+char ch,new;
+scanf("%c",&ch);
+
+if(ch>='a' && ch<='z'){
+    new = ch - 32;
+    printf("%c",new);
+}
+else if(ch>='A' && ch<='Z'){
+    new = ch + 32;
+    printf("%c",new);
+}
+
+return 0;
+}
+
 

@@ -88,3 +88,35 @@ return 0;
 }
 
 
+
+
+
+
+#include <stdio.h>
+int main()
+{
+
+    // M. Capital or Small or Digit
+
+    char ch;
+    scanf("%c", &ch);
+
+    if (ch >= 'a' && ch <= 'z')
+    {
+        printf("ALPHA\nIS SMALL\n");
+    }
+    else if (ch >= 'A' && ch <= 'Z')
+    {
+        printf("ALPHA\nIS CAPITAL\n");
+    }
+
+    else if (ch >= 47 && ch <= 57)
+        printf("IS DIGIT\n");
+    return 0;
+}
+
+
+
+
+
+

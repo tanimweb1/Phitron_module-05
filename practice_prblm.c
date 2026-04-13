@@ -37,3 +37,34 @@ else{
 
 return 0;
 }
+
+
+
+
+
+
+
+#include<stdio.h>
+int main(){
+
+//P. First digit !
+
+int a,digit;
+scanf("%d",&a);
+
+digit = a/1000;
+
+if(digit%2==0){
+    printf("EVEN\n");
+}
+else{
+    printf("ODD\n");
+}
+
+return 0;
+}
+
+
+
+
+

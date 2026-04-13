@@ -120,3 +120,57 @@ int main()
 
 
 
+
+#include <stdio.h>
+int main()
+{
+
+    // K. Max and Min
+    int a, b, c, large, small;
+    scanf("%d%d%d", &a, &b, &c);
+
+    if (a > b && a > c)
+    {
+        large = a;
+        if (b < a && b < c)
+        {
+            small = b;
+        }
+        else
+        {
+            small = c;
+        }
+    }
+    else if (b > c && b > a)
+    {
+        large = b;
+        if (a < b && a < c)
+        {
+            small = a;
+        }
+        else
+        {
+            small = c;
+        }
+    }
+
+    else
+    {
+
+        large = c;
+        if (a < c && a < b)
+        {
+            small = a;
+        }
+        else
+        {
+            small = b;
+        }
+    }
+
+    printf("%d %d", small, large);
+
+    return 0;
+}
+
+
